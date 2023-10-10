@@ -6,6 +6,7 @@
 
 body {
     min-height: 100vh;
+    min-width: 100%;
     display: flex;
     flex-direction: column;
     margin: 0;
@@ -15,12 +16,14 @@ body {
 p {
     margin: 0;
     font-size: 16pt;
+    line-height: 2.5;
 }
 
 .main {
     /* max-width: 1080px; */
     margin-left: auto;
     margin-right: auto;
+    min-width: 100%;
 }
 
 #main-image {
@@ -61,7 +64,6 @@ p {
     border: 2pt solid #444B6E;
     border-radius: 6pt;
     transition-duration: 0.4s;
-    /* text-decoration: underline; */
 }
 
 .topnav a.active {
@@ -83,18 +85,16 @@ p {
 /* box1 h1 */
 .box1 h1 {
     margin: 0;
-    /* margin-top: 24pt; */
     padding-bottom: 24pt;
     color: #444B6E;
     font-weight: bolder;
     font-family: "DM Serif Display", serif;
     font-size: 60pt;
-    /* text-align: center; */
 }
 
 /* box1 h2 */
 .box1 h2 {
-    margin: 0;
+    margin: auto;
     padding-bottom: 24pt;
     color: #444B6E;
     font-size: 32pt;
@@ -114,12 +114,11 @@ p {
     flex-flow: row wrap;
     flex-direction: column;
     background-color: #9AB87A50;
-    /* border-radius: 24pt; */
     padding: 24pt;
 }
 
 .box2 h2 {
-    margin: 0;
+    margin: auto;
     margin-bottom: 24pt;
     padding: 0;
     color: #495B4C;
@@ -139,9 +138,7 @@ p {
     display: flex;
     flex-flow: row wrap;
     flex-direction: column;
-    align-items: en;
     background-color: #3D315B50;
-    /* border-radius: 24pt; */
     padding: 24pt;
 }
 
@@ -164,7 +161,14 @@ p {
 /* hbox */
 .hbox {
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.hbox + div {
+    margin-right: 16pt;
+    margin-left: 16pt;
 }
 
 /* large button */
@@ -191,6 +195,9 @@ p {
 .content-box1 {
     display: flex;
     flex-direction: column;
+    max-width: 100ch;
+    margin: auto;
+    
 }
 
 .content-box1 h3 {
