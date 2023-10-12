@@ -62,7 +62,7 @@ p {
     text-align: center;
     border: 2pt solid transparent;
     padding: 6pt 12pt;
-    font-size: 16pt;
+    font-size: 12pt;
     text-decoration: none;
     margin: 0pt 3pt;
 }
@@ -247,6 +247,8 @@ footer div {
 .img-container {
     display: flex;
     flex-direction: column;
+    width: 100%;
+    height: auto;
 }
 
 .img-container img {
@@ -276,9 +278,28 @@ footer div {
         display: none;
     } */
 
+    p {
+        font-size: 12pt;
+    }
+
+    h1 {
+        font-size: 24pt;
+    }
+
+    h2 {
+        font-size: 20pt;
+    }
+
+    h3 {
+        font-size: 16pt;
+    }
+
     .topnav {
         flex-direction: column;
+    }
 
+    .topnav a {
+        font-size: 10pt;
     }
 
     .hbox {
@@ -298,8 +319,19 @@ footer div {
         position: inherit;
     }
 
-    .img-container .content-box1 h1 {
-        font-size: 38pt;
+    .img-container .content-box1 {
+        position: inherit;
+        max-width: 100vw;
+        margin: 0;
+        padding: 24pt;
+    }
+
+    footer a {
+        font-size: 10pt;
+    }
+
+    footer h3 {
+        font-size: 12pt;
     }
 }
 
@@ -321,13 +353,14 @@ footer div {
     .img-container {
         align-items: self-start;
         width: 100%;
-        max-height: 100%;
+        height: auto;
         overflow: hidden;
      } 
     
     .img-container .content-box1 {
         position: inherit;
         max-width: 100vw;
+        margin: 0;
     }
 }
 
