@@ -79,6 +79,7 @@ p {
     display: flex;
     flex-flow: row wrap;
     flex-direction: column;
+    min-height: 36ch;
     padding: 24pt;
 }
 
@@ -115,6 +116,7 @@ p {
     flex-direction: column;
     background-color: #9AB87A50;
     padding: 24pt;
+    min-height: 36ch;
 }
 
 .box2 h2 {
@@ -140,6 +142,7 @@ p {
     flex-direction: column;
     background-color: #3D315B50;
     padding: 24pt;
+    min-height: 36ch;
 }
 
 .box3 h2 {
@@ -236,6 +239,34 @@ footer div {
     overflow: hidden;
 }
 
+/* content box with image background */
+.img-box {
+    background: url(/assets/poppy2.jpeg) 50% no-repeat;
+    background-size: cover;
+    min-height: 50ch;
+    max-width: 100%;
+    padding: 24pt;
+    margin: auto;
+}
+
+.img-box .content-box1 {
+    position: relative;
+    background-color: #ffffff99;
+    padding: 24pt;
+    border-radius: 24pt;
+    margin: 24pt;
+    max-width: 50ch;
+}
+
+.img-box .content-box1 h1 {
+    margin: 0;
+    padding-bottom: 24pt;
+    color: #444B6E;
+    font-weight: bolder;
+    font-family: "DM Serif Display", serif;
+    font-size: 60pt;
+}
+
 /* small screens */
 @media all and (max-width: 500px) {
     img {
@@ -268,4 +299,6 @@ footer div {
     .topnav {
         justify-content: space-around;
     }
+
 }
+
