@@ -278,19 +278,19 @@ footer div {
         display: none;
     } */
 
-    p {
+    .content-box1 p {
         font-size: 12pt;
     }
 
-    h1 {
+    .content-box1 h1 {
         font-size: 24pt;
     }
 
-    h2 {
+    .content-box1 h2 {
         font-size: 20pt;
     }
 
-    h3 {
+    .content-box1 h3 {
         font-size: 16pt;
     }
 
