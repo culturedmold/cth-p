@@ -241,7 +241,7 @@ footer div {
 
 /* content box with image background */
 .img-box {
-    background: url(/assets/poppy2.jpeg) 50% no-repeat;
+    background: url("./assets/poppy2.jpeg") 50% no-repeat;
     background-size: cover;
     min-height: 50ch;
     max-width: 100%;
