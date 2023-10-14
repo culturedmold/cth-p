@@ -6,7 +6,7 @@
 
 /* headers */
 h1 {
-    /* margin: 0; */
+    margin-bottom: 0;
     /* padding-bottom: 24pt; */
     font-family: "DM Serif Display", serif;
     font-size: 60pt;
@@ -14,19 +14,19 @@ h1 {
 }
 
 h2 {
-    /* margin: 0; */
+    margin-bottom: 0;
     font-size: 32pt;
     font-family: "DM Serif Display", serif;
 }
 
 h3 {
-    /* margin: 0; */
+    margin-bottom: 0;
     font-size: 20pt;
     font-family: "DM Serif Display", serif;
 }
 
 h4 {
-    /* margin: 0; */
+    margin-bottom: 0;
     font-family: "DM Serif Display", serif;
     font-size: 12pt;
 }
@@ -281,6 +281,7 @@ footer div {
     background-color: #ffffff99;
     border-radius: 24pt;
     max-width: 75ch;
+    max-height: 100%;
 }
 
 .img-container .content-box1 h1 {
