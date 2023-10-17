@@ -191,6 +191,10 @@ body {
     margin: auto;
 }
 
+.hbox h2, h3, h4, p {
+    padding: 0pt 12pt;
+}
+
 /* large button */
 .large-button {
     padding: 6pt 36pt;
@@ -219,7 +223,7 @@ body {
     align-self: center;
     align-content: center;
     /* margin: auto; */
-    margin: 24pt;
+    /* margin: 24pt; */
 
 }
 
