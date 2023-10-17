@@ -111,6 +111,10 @@ body {
     padding: 24pt;
 }
 
+h3, h4 {
+    font-weight: lighter;
+}
+
 /* header modifiers for box 1 */
 .box1 h1 {
     color: #444B6E;
