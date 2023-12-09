@@ -6,35 +6,46 @@
 
 /* headers */
 h1 {
-    margin: 16pt 0pt;
+    margin: 20pt 0pt;
     /* padding-bottom: 24pt; */
     font-family: "DM Serif Display", serif;
-    font-size: 60pt;
+    font-size: 144px;
     font-weight: bolder;
+    color: #444B6E;
 }
 
 h2 {
-    margin: 12pt 0pt;
-    font-size: 32pt;
+    margin: 14pt 0pt;
+    font-size: 72px;
     font-family: "DM Serif Display", serif;
+    color: #495B4C;
 }
 
 h3 {
     margin: 8pt 0pt;
-    font-size: 20pt;
+    font-size: 36pt;
     font-family: "DM Serif Display", serif;
+    color: #444B6E;
 }
 
 h4 {
     margin: 4pt 0pt;
     font-family: "DM Serif Display", serif;
+    font-size: 24pt;
+    color: #495B4C;
+}
+
+h5 {
+    margin: 4pt 0pt;
+    font-family: "DM Serif Display", serif;
     font-size: 16pt;
+    color: #444B6E
 }
 
 p {
     /* margin: 0; */
     font-size: 16pt;
-    line-height: 2.5;
+    line-height: 1.5;
 }
 
 body {
@@ -49,9 +60,27 @@ body {
 /* main container */
 .main {
     /* max-width: 1080px; */
-    margin-left: auto;
-    margin-right: auto;
-    min-width: 100vw;
+    display: grid;
+    /* grid-template-columns: 1fr 1fr; */
+    /* margin-left: auto;
+    margin-right: auto; */
+    align-items: top;
+
+}
+
+ul {
+    list-style-position: inside;
+}
+
+ul li {
+    font-size: 28px;
+    text-align: left !important;
+    font-family: "DM Serif Display";
+    color:#444B6E;
+}
+
+ul li ul li {
+    font-size: 20px;
 }
 
 #main-image {
@@ -90,7 +119,7 @@ body {
 
 .topnav a:hover {
     border: 2pt solid #444B6E;
-    border-radius: 6pt;
+    border-radius: 50px;
     transition-duration: 0.4s;
 }
 
@@ -98,7 +127,7 @@ body {
     /* background-color: #c2c1a5; */
     background-color: #444B6E;
     border: 2pt solid #444B6E;
-    border-radius: 6pt;
+    border-radius: 50px;
     color: white;
 }
 
@@ -115,120 +144,23 @@ h3, h4 {
     font-weight: lighter;
 }
 
-/* header modifiers for box 1 */
-.box1 h1 {
-    color: #444B6E;
-}
-
-.box1 h2 {
-    color: #444B6E;
-}
-
-.box1 h3 {
-    color: #444B6E;
-}
-
-.box1 h4 {
-    color: #444B6E;
-}
-
-/* flexbox 2 */
-.box2 {
-    display: flex;
-    flex-flow: row wrap;
-    flex-direction: column;
-    background-color: #9AB87A50;
-    padding: 24pt;
-    min-height: 36ch;
-}
-
-
-/* header modifiers for box2 */
-.box2 h1 {
-    color: #495B4C;
-}
-
-.box2 h2 {
-    color: #495B4C;
-}
-
-.box2 h3 {
-    color: #495B4C;
-}
-
-.box2 h4 {
-    color: #495B4C;
-}
-
-/* flexbox 3 */
-.box3 {
-    display: flex;
-    flex-flow: row wrap;
-    flex-direction: column;
-    background-color: #3D315B50;
-    padding: 24pt;
-    min-height: 36ch;
-}
-
-/* header modifiers for box3 */
-.box3 h1 {
-    color: #3D315B;
-}
-
-.box3 h2 {
-    color: #3D315B;
-}
-
-.box3 h3 {
-    color: #3D315B;
-}
-
-.box3 h4 {
-    color: #3D315B;
-}
-
-/* hbox */
-.hbox {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin: auto;
-}
-
-.hbox h2, h3, h4, p {
-    padding: 0pt 12pt;
-}
-
 /* large button */
 .large-button {
-    padding: 6pt 36pt;
-    border: 2pt solid #444B6E;
-    border-radius: 6pt;
-    color: black;
+    padding: 6px 12.5%;
+    /* border: 2pt solid #444B6E; */
+    background-color: #444B6E;
+    border-radius: 50pt;
+    color: white;
     text-align: center;
     text-decoration: none;
     max-width: max-content;
-    margin-top: 24pt;
-    margin-left: auto;
-    margin-right: auto;
-
+    box-shadow: #444B6E50 4px 4px 3px;
 }
 
 .large-button:hover {
-    background-color: #444B6E;
-    color: white;
+    background-color: #495B4C80;
+    color: black;
     transition-duration: 0.4s;
-}
-
-.content-box1 {
-    display: flex;
-    flex-direction: column;
-    max-width: 100ch;
-    align-self: center;
-    align-content: center;
-    /* margin: auto; */
-    /* margin: 24pt; */
-
 }
 
 /* footer */
@@ -239,7 +171,7 @@ footer {
     font-family: "DM Sans", sans-serif;
     padding: 12pt;
     overflow: hidden;
-    margin-top: auto;
+    margin-top: 48px;
 }
 
 footer h3 {
@@ -281,45 +213,104 @@ footer div {
     object-fit: cover;
 }
 
-.img-container .content-box1 {
-    position: absolute;
-    margin: 24pt;
-    padding: 24pt;
-    align-self: auto;
-    background-color: #ffffff99;
-    border-radius: 24pt;
-    max-width: 75ch;
-    max-height: 100%;
+/* GRID */
+.cell {
+    position: relative;
+    margin: auto;
+    /* margin-bottom: 24px; */
+    /* padding: 24pt; */
+    /* gap: 24pt; */
+    min-height: 24ch;
+    max-width: 80ch;
+    vertical-align: bottom;
 }
 
-.img-container .content-box1 h1 {
-    color: #444b6e;
+.cell-full-width {
+    /* margin-top: 24pt; */
+    /* padding: 24pt; */
+    grid-column: span 2;
+    margin: auto 0%;
+    margin-bottom: 24px;
+    /* margin-top: 48px; */
 }
+
+.cell-full-width p {
+    margin-left: 12.5%;
+    margin-right: 12.5%;
+    /* align-self: center center; */
+}
+
+.cell-full-width .cell {
+    align-items: center;
+    min-height: 24ch;
+    margin: auto;
+    /* min-width: 100%; */
+}
+
+.cell-full-width h1 {
+    text-align: start;
+    margin: 3% 12.5%;
+    place-self: start; 
+}
+
+.cell-full-width hr {
+    margin: 0% 25%;
+    background-color: #495B4C;
+    height: 2px;
+    max-width: 50%;
+}
+
+.top-level-cell {
+    grid-column: span 2;
+    background-color: #444B6E;
+}
+
+.top-level-cell h1 {
+    text-align: start;
+    margin: 3% 12.5%;
+    color: white;
+}
+/* END GRID */
 
 /* small screens */
-@media all and (max-width: 500px) {
+@media all and (max-width: 600px) {
     /* img {
         display: none;
     } */
 
-    .content-box1 p {
-        font-size: 12pt;
+    .cell {
+        grid-column: span 2;
+        /* margin-bottom: 12px; */
+        margin: 24px;
+        min-height: fit-content;
+    }
+    .cell-full-width {
+        margin: 24px;
     }
 
-    .content-box1 h1 {
+    p {
+        font-size: 12pt;
+        margin-bottom: 48px;
+    }
+
+    h1 {
+        font-size: 48pt;
+    }
+
+    .top-level-cell h1 {
+        margin: 6%;
+    }
+
+    h2 {
+        font-size: 32pt;
+    }
+
+    h3 {
         font-size: 24pt;
     }
 
-    .content-box1 h2 {
-        font-size: 20pt;
-    }
-
-    .content-box1 h3 {
+    h4 {
         font-size: 16pt;
-    }
-
-    .content-box1 h4 {
-        font-size: 12pt;
     }
 
     .topnav {
@@ -365,6 +356,10 @@ footer div {
 
 /* medium screens */
 @media all and (max-width: 800px) {
+    .cell {
+        grid-column: span 2;
+        margin-bottom: 48px;
+    }
     body {
         text-align: center;
     }
