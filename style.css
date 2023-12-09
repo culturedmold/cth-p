@@ -67,7 +67,9 @@ body {
 }
 
 ul {
+    display: inline-block;
     list-style-position: inside;
+    margin: auto;
 }
 
 ul li {
@@ -75,6 +77,14 @@ ul li {
     text-align: left !important;
     font-family: "DM Serif Display";
     color:#444B6E;
+}
+
+#current-job ul {
+    margin-bottom: 24px;
+}
+
+#current-job ul li {
+    font-size: 20px;
 }
 
 ul li ul li {
@@ -144,7 +154,7 @@ h3, h4 {
 
 /* large button */
 .large-button {
-    padding: 6px 12.5%;
+    padding: 6px 48px;
     /* border: 2pt solid #444B6E; */
     background-color: #444B6E;
     border-radius: 50pt;
@@ -214,7 +224,7 @@ footer div {
 /* GRID */
 .cell {
     position: relative;
-    margin: auto;
+    margin: auto 24px;
     /* margin-bottom: 24px; */
     /* padding: 24pt; */
     /* gap: 24pt; */
@@ -222,6 +232,13 @@ footer div {
     max-width: 80ch;
     vertical-align: bottom;
 }
+
+/* .cell hr {
+    margin: 0% 25%;
+    background-color: #495B4C;
+    height: 2px;
+    max-width: 75%;
+} */
 
 .cell-full-width {
     /* margin-top: 24pt; */
@@ -270,6 +287,35 @@ footer div {
 }
 /* END GRID */
 
+/* "Experience" Modifiers/Job Info */
+#current-job {
+    border: solid;
+    margin: 24px;
+    border-radius: 24px;
+    border-color: #444B6E;
+    background-color: #444B6E20;
+}
+
+.job-cell {
+    position: relative;
+    margin: auto 24px;
+    /* margin-bottom: 24px; */
+    /* padding: 24pt; */
+    /* gap: 24pt; */
+    min-height: 24ch;
+    max-width: 80ch;
+    vertical-align: bottom;
+}
+
+.job-cell ul {
+    margin-bottom: 24px;
+}
+
+.job-cell ul li {
+    font-size: 20px;
+    margin-right: 24px;
+}
+
 /* small screens */
 @media all and (max-width: 600px) {
     /* img {
@@ -282,6 +328,14 @@ footer div {
         margin: 24px;
         min-height: fit-content;
     }
+
+    .job-cell {
+        grid-column: span 2;
+        /* margin-bottom: 12px; */
+        margin: 24px;
+        min-height: fit-content;
+    }
+
     .cell-full-width {
         margin: 24px;
     }
@@ -300,15 +354,15 @@ footer div {
     }
 
     h2 {
-        font-size: 32pt;
+        font-size: 40pt;
     }
 
     h3 {
-        font-size: 24pt;
+        font-size: 36pt;
     }
 
     h4 {
-        font-size: 16pt;
+        font-size: 24pt;
     }
 
     .topnav {
@@ -358,6 +412,12 @@ footer div {
         grid-column: span 2;
         margin-bottom: 48px;
     }
+
+    .job-cell {
+        grid-column: span 2;
+        margin-bottom: 48px;
+    }
+
     body {
         text-align: center;
     }
