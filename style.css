@@ -271,8 +271,8 @@ section {
 
 .cell-inner {
   width: 100%;
-  display: flex;
-  flex-direction: column;
+  
+  align-self: stretch;
 }
 
 /* small screens */
