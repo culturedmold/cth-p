@@ -242,13 +242,14 @@ section {
 }
 
 .top-level-cell h1 {
+  margin-top: 1rem;
   color: white;
   max-width: 80ch;
 
 }
 
 .top-level-cell h5 {
-  margin: 1rem auto;
+  margin: 2rem auto 2rem auto;
   color: white;
   max-width: 80ch;
 }
